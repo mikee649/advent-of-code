@@ -4,6 +4,7 @@ use std::process;
 mod dec01;
 mod dec02;
 mod dec03;
+mod dec04;
 
 fn main() {
     if env::args().len() != 2 {
@@ -16,6 +17,7 @@ fn main() {
         "dec01" => dec01::solve(),
         "dec02" => dec02::solve(),
         "dec03" => dec03::solve(),
+        "dec04" => dec04::solve(),
         _ => println!("No solution for {}", day),
     };
 }
