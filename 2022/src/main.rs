@@ -1,3 +1,5 @@
+extern crate regex;
+
 use std::env;
 use std::process;
 
@@ -5,6 +7,7 @@ mod dec01;
 mod dec02;
 mod dec03;
 mod dec04;
+mod dec05;
 
 fn main() {
     if env::args().len() != 2 {
@@ -18,6 +21,7 @@ fn main() {
         "dec02" => dec02::solve(),
         "dec03" => dec03::solve(),
         "dec04" => dec04::solve(),
+        "dec05" => dec05::solve(),
         _ => println!("No solution for {}", day),
     };
 }
