@@ -12,6 +12,7 @@ mod dec06;
 mod dec07;
 mod dec08;
 mod dec09;
+mod dec10;
 
 fn main() {
     if env::args().len() != 2 {
@@ -30,6 +31,7 @@ fn main() {
         "dec07" => dec07::solve(),
         "dec08" => dec08::solve(),
         "dec09" => dec09::solve(),
+        "dec10" => dec10::solve(),
         _ => println!("No solution for {}", day),
     };
 }
